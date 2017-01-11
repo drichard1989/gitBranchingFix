@@ -22,6 +22,6 @@ request(omdbAPIURL, function (error, response, body) {
   if (!error && response.statusCode == 200) {
     console.log(body) 
     var movie = JSON.parse(body); 
-    console.log(movieTitle + "IMDB Rating:" + erroroccurshere);
+    console.log(movieTitle + "IMDB Rating:" + movie.imdbRating);
   }
 })
